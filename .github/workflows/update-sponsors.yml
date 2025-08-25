@@ -11,7 +11,7 @@ jobs:
   update-sponsors:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - uses: pnpm/action-setup@v4
 
@@ -20,24 +20,18 @@ jobs:
         with:
           node-version: lts/*
 
-      - run: pnpm i
+      - run: pnpm install
 
       - name: Update sponsors
-        run: npm run build
+        run: pnpm build
         env:
           SPONSORKIT_GITHUB_TOKEN: ${{ secrets.SPONSORKIT_GITHUB_TOKEN }}
-          SPONSORKIT_GITHUB_LOGIN: antfu
-          SPONSORKIT_OPENCOLLECTIVE_KEY: ${{ secrets.SPONSORKIT_OPENCOLLECTIVE_KEY }}
-          SPONSORKIT_OPENCOLLECTIVE_SLUG: antfu
-          SPONSORKIT_AFDIAN_USER_ID: ${{ secrets.SPONSORKIT_AFDIAN_USER_ID }}
-          SPONSORKIT_AFDIAN_TOKEN: ${{ secrets.SPONSORKIT_AFDIAN_TOKEN }}
+          SPONSORKIT_GITHUB_LOGIN: ${{ secrets.SPONSORKIT_GITHUB_LOGIN }}
 
       - name: Commit
         uses: EndBug/add-and-commit@v9
         with:
-          author_name: GitHub Actions
-          author_email: 41898282+github-actions[bot]@users.noreply.github.com
-          message: 'chore: update sponsors.svg [ci skip]'
+          message: 'chore: update sponsors'
           add: 'sponsors.*'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
