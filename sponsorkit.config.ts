@@ -1,4 +1,4 @@
-import { BadgePreset, defineConfig, presets } from 'sponsorkit';
+import { BadgePreset, defineConfig, tierPresets } from 'sponsorkit';
 import fs from 'fs/promises';
 
 const past: BadgePreset = {
@@ -20,12 +20,8 @@ export default defineConfig({
       preset: past,
     },
     {
-      title: 'Backers',
-      preset: presets.small,
-    },
-    {
       title: 'Sponsors',
-      monthlyDollars: 10,
+      monthlyDollars: 1,
       preset: {
         avatar: {
           size: 42,
@@ -40,23 +36,19 @@ export default defineConfig({
     {
       title: 'Silver Sponsors',
       monthlyDollars: 50,
-      preset: presets.medium,
+      preset: tierPresets.medium,
     },
     {
       title: 'Gold Sponsors',
       monthlyDollars: 100,
-      preset: presets.large,
+      preset: tierPresets.large,
     },
     {
       title: 'Platinum Sponsors',
       monthlyDollars: 500,
-      preset: presets.xl,
+      preset: tierPresets.xl,
     },
   ],
-
-  sponsorsAutoMerge: true,
-
-  mergeSponsors: [[{ login: 'stonith404', provider: 'github' }], [{ login: 'kmendell', provider: 'github' }]],
 
   async onSponsorsReady(sponsors) {
     await fs.writeFile(
