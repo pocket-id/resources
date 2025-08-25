@@ -56,12 +56,7 @@ export default defineConfig({
 
   sponsorsAutoMerge: true,
 
-  mergeSponsors: [
-    [{ login: 'patak-dev', provider: 'github' }],
-    [{ login: 'serkodev', provider: 'github' }],
-    [{ login: 'WebWorkerTech', provider: 'github' }],
-    [{ login: 'kissu', provider: 'github' }],
-  ],
+  mergeSponsors: [[{ login: 'stonith404', provider: 'github' }], [{ login: 'kmendell', provider: 'github' }]],
 
   async onSponsorsReady(sponsors) {
     await fs.writeFile(
@@ -86,21 +81,6 @@ export default defineConfig({
     );
   },
 
-  onSponsorsAllFetched(sponsors) {
-    sponsors.unshift({
-      monthlyDollars: 2000,
-      privacyLevel: 'PUBLIC',
-      sponsor: {
-        name: 'NuxtLabs',
-        login: 'nuxtlabs',
-        linkUrl: 'https://nuxtlabs.com',
-        avatarUrl: 'https://avatars.githubusercontent.com/u/62017400?v=4',
-        type: 'Organization',
-      },
-    });
-    return sponsors;
-  },
-
   outputDir: '.',
   formats: ['svg', 'png'],
 
@@ -108,17 +88,15 @@ export default defineConfig({
     {
       name: 'sponsors',
       width: 800,
-      filter: (sponsor) => sponsor.sponsor?.login !== 'nuxtlabs',
     },
     {
       name: 'sponsors.wide',
       width: 1800,
-      filter: (sponsor) => sponsor.sponsor?.login !== 'nuxtlabs',
     },
     {
       name: 'sponsors.part1',
       width: 800,
-      filter: (sponsor) => sponsor.monthlyDollars >= 9.9 && sponsor.sponsor?.login !== 'nuxtlabs',
+      filter: (sponsor) => sponsor.monthlyDollars >= 9.9,
     },
     {
       name: 'sponsors.part2',
