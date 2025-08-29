@@ -2,10 +2,10 @@ name: Update Sponsors
 
 on:
   workflow_dispatch:
-#   schedule:
-#     - cron: '0 0 * * *'
-#   push:
-#     branches: [main]
+  schedule:
+    - cron: '0 * * * *' # every hour (UTC)
+  push:
+    branches: [main]
 
 permissions:
   contents: write
@@ -104,6 +104,8 @@ jobs:
       - name: Commit merged sponsors.json
         uses: EndBug/add-and-commit@v9
         with:
+          author_name: GitHub Actions
+          author_email: 41898282+github-actions[bot]@users.noreply.github.com
           message: 'chore: update sponsors [skip ci]'
           add: 'sponsors.json'
         env:
