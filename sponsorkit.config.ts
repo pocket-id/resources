@@ -49,7 +49,6 @@ export default defineConfig({
 
   async onSponsorsReady(sponsors) {
     await fs.writeFile(
-      // write per-user file
       outputJson,
       JSON.stringify(
         sponsors
@@ -59,7 +58,6 @@ export default defineConfig({
               name: i.sponsor.name,
               login: i.sponsor.login,
               avatar: i.sponsor.avatarUrl,
-              amount: i.monthlyDollars,
               link: i.sponsor.linkUrl || i.sponsor.websiteUrl,
               org: i.sponsor.type === 'Organization',
             };
