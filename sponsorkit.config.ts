@@ -12,11 +12,13 @@ const past: BadgePreset = {
   },
 };
 
+const login = process.env.SPONSORKIT_GITHUB_LOGIN ?? 'unknown';
+const outputJson = `sponsors.${login}.json`;
+
 export default defineConfig({
   tiers: [
     {
       title: 'Past Sponsors',
-      monthlyDollars: -1,
       preset: past,
     },
     {
@@ -35,24 +37,20 @@ export default defineConfig({
     },
     {
       title: 'Silver Sponsors',
-      monthlyDollars: 50,
+      monthlyDollars: 5,
       preset: tierPresets.medium,
     },
     {
       title: 'Gold Sponsors',
-      monthlyDollars: 100,
+      monthlyDollars: 10,
       preset: tierPresets.large,
-    },
-    {
-      title: 'Platinum Sponsors',
-      monthlyDollars: 500,
-      preset: tierPresets.xl,
     },
   ],
 
   async onSponsorsReady(sponsors) {
     await fs.writeFile(
-      'sponsors.json',
+      // write per-user file
+      outputJson,
       JSON.stringify(
         sponsors
           .filter((i) => i.privacyLevel !== 'PRIVATE')
