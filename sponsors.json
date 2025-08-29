@@ -4,20 +4,79 @@
     "login": "Starttoaster",
     "avatar": "https://avatars.githubusercontent.com/u/13720491?u=7c596917fd17bf5ce75e4e2db281a6c8938a1d42&v=4",
     "link": "https://github.com/Starttoaster",
-    "org": false
+    "org": false,
+    "amount": 0
   },
   {
     "name": null,
     "login": "Collectathon",
     "avatar": "https://avatars.githubusercontent.com/u/60051762?u=860f74e3a64373b295293e14c3016a8a7b750f5e&v=4",
     "link": "https://github.com/Collectathon",
-    "org": false
+    "org": false,
+    "amount": 0
   },
   {
     "name": "Alex",
     "login": "nnmalex",
     "avatar": "https://avatars.githubusercontent.com/u/6181345?v=4",
     "link": "https://github.com/nnmalex",
+    "org": false,
+    "amount": 0
+  },
+  {
+    "name": "Sergey",
+    "login": "malsatin",
+    "avatar": "https://avatars.githubusercontent.com/u/9138285?v=4",
+    "link": "https://github.com/malsatin",
+    "org": false
+  },
+  {
+    "name": "Lennart Weller",
+    "login": "lhw",
+    "avatar": "https://avatars.githubusercontent.com/u/351875?v=4",
+    "link": "https://github.com/lhw",
+    "org": false
+  },
+  {
+    "name": null,
+    "login": "fourthfloorsolutions",
+    "avatar": "https://avatars.githubusercontent.com/u/172391652?v=4",
+    "link": "https://github.com/fourthfloorsolutions",
+    "org": false
+  },
+  {
+    "name": null,
+    "login": "aerosteon",
+    "avatar": "https://avatars.githubusercontent.com/u/79047821?v=4",
+    "link": "https://github.com/aerosteon",
+    "org": false
+  },
+  {
+    "name": "Erisa A",
+    "login": "Erisa",
+    "avatar": "https://avatars.githubusercontent.com/u/14004943?u=edecbb9bf7727b434ebafcfc7ffb95e6793aa3f3&v=4",
+    "link": "https://github.com/Erisa",
+    "org": false
+  },
+  {
+    "name": "Grégory Paul",
+    "login": "paulgreg",
+    "avatar": "https://avatars.githubusercontent.com/u/250740?u=dbcaeab00fe893a0f2a720b8c1f96f0298a86f62&v=4",
+    "link": "https://github.com/paulgreg",
+    "org": false
+  },
+  {
+    "name": null,
+    "login": "undaunt",
+    "avatar": "https://avatars.githubusercontent.com/u/31376520?u=8e6b95ce7bc566c0ff80df9de562e3527527cb7a&v=4",
+    "link": "https://github.com/undaunt",
+    "org": false
+  },
+  {
+    "name": "Ulf",
+    "login": "0xDedSec42",
+    "avatar": "https://avatars.githubusercontent.com/u/47573?u=8d7d927974dd5193df2d468ca9e86f20f1ced17e&v=4",
+    "link": "https://github.com/0xDedSec42",
     "org": false
   }
 ]
