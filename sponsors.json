@@ -1,5 +1,13 @@
 [
   {
+    "name": "Affiliate FM",
+    "login": "affiliatefm",
+    "avatar": "https://avatars.githubusercontent.com/u/246172035?u=b0a8b9bbb4cac641939ce7a6c7afc246029baae0&v=4",
+    "link": "https://github.com/affiliatefm",
+    "org": false,
+    "amount": 0
+  },
+  {
     "name": null,
     "login": "zer0ish",
     "avatar": "https://avatars.githubusercontent.com/u/29928635?u=d83bbde3c1c7ad3b0d2dd4a9cf1d0ce2c7603714&v=4",
