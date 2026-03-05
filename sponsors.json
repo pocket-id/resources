@@ -129,6 +129,13 @@
     "org": false
   },
   {
+    "name": "MikanDev",
+    "login": "mikndotdev",
+    "avatar": "https://avatars.githubusercontent.com/u/173619310?v=4",
+    "link": "https://github.com/mikndotdev",
+    "org": true
+  },
+  {
     "name": "Mattheus",
     "login": "tioan",
     "avatar": "https://avatars.githubusercontent.com/u/259990?v=4",
