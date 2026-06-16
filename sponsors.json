@@ -42,6 +42,13 @@
     "org": false
   },
   {
+    "name": "Another",
+    "login": "Anotther",
+    "avatar": "https://avatars.githubusercontent.com/u/133302797?v=4",
+    "link": "https://github.com/Anotther",
+    "org": false
+  },
+  {
     "name": "Jad Tala",
     "login": "jadtl",
     "avatar": "https://avatars.githubusercontent.com/u/56200813?u=55d7bbca6e2364b0b7eb276b0b7080a00c374efb&v=4",
