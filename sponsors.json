@@ -67,6 +67,13 @@
     "amount": 0
   },
   {
+    "name": "permiso-labs",
+    "login": "permiso-labs",
+    "avatar": "https://avatars.githubusercontent.com/u/276560386?v=4",
+    "link": "https://github.com/permiso-labs",
+    "org": true
+  },
+  {
     "name": "Sergey",
     "login": "malsatin",
     "avatar": "https://avatars.githubusercontent.com/u/9138285?v=4",
